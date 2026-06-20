@@ -1,0 +1,27 @@
+{
+  "name": "formal-markdown",
+  "version": "1.0.1-b1",
+  "description": "",
+  "main": "index.js",
+  "bin": {
+    "formal-markdown": "index.js"
+  },
+  "files": [
+    "index.js",
+    "config/",
+    "public/",
+    "views/"
+  ],
+  "scripts": {
+    "start": "node ."
+  },
+  "author": "Zafran",
+  "license": "ISC",
+  "dependencies": {
+    "ejs": "^5.0.1",
+    "express": "^5.2.1",
+    "gray-matter": "^4.0.3",
+    "marked": "^17.0.4",
+    "path": "^0.12.7"
+  }
+}

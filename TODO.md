@@ -1,0 +1,6 @@
+- [ ] Figure
+	- [ ] Captions
+		- [ ] Figure type prefixes
+		- [ ] Numbering
+- [ ] Image sizing
+- [ ] Table styles

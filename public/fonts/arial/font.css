@@ -1,0 +1,80 @@
+@font-face {
+	font-family: "Arial";
+	src: url("/fonts/arial/400norm.woff2") format("woff2");
+	font-style: normal;
+	font-weight: 400;
+	font-stretch: normal;
+	font-width: normal;
+}
+
+@font-face {
+	font-family: "Arial";
+	src: url("/fonts/arial/400ital.woff2") format("woff2");
+	font-weight: 400;
+	font-style: italic;
+	font-stretch: normal;
+	font-width: normal;
+}
+
+@font-face {
+	font-family: "Arial";
+	src: url("/fonts/arial/400normcond.woff2") format("woff2");
+	font-weight: 400;
+	font-style: normal;
+	font-stretch: condensed;
+	font-width: condensed;
+}
+
+@font-face {
+	font-family: "Arial";
+	src: url("/fonts/arial/400italcond.woff2") format("woff2");
+	font-weight: 400;
+	font-style: italic;
+	font-stretch: condensed;
+	font-width: condensed;
+}
+
+@font-face {
+	font-family: "Arial";
+	src: url("/fonts/arial/700norm.woff2") format("woff2");
+	font-weight: 700;
+	font-style: normal;
+	font-stretch: normal;
+	font-width: normal;
+}
+
+@font-face {
+	font-family: "Arial";
+	src: url("/fonts/arial/700ital.woff2") format("woff2");
+	font-weight: 700;
+	font-style: italic;
+	font-stretch: normal;
+	font-width: normal;
+}
+
+@font-face {
+	font-family: "Arial";
+	src: url("/fonts/arial/700normcond.woff2") format("woff2");
+	font-weight: 700;
+	font-style: normal;
+	font-stretch: condensed;
+	font-width: condensed;
+}
+
+@font-face {
+	font-family: "Arial";
+	src: url("/fonts/arial/700italcond.woff2") format("woff2");
+	font-weight: 700;
+	font-style: italic;
+	font-stretch: condensed;
+	font-width: condensed;
+}
+
+@font-face {
+	font-family: "Arial";
+	src: url("/fonts/arial/900norm.woff2") format("woff2");
+	font-weight: 900;
+	font-style: normal;
+	font-stretch: normal;
+	font-width: normal;
+}

@@ -1,0 +1,11 @@
+@font-face {
+    font-family: "Latin Modern Mono";
+    src: url("400norm.woff");
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Latin Modern Mono";
+    src: url("ital.woff");
+    font-style: italic;
+}

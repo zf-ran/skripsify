@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title><%- title %></title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<!-- CSS -->
+	<link rel="stylesheet" href="/main.css"/>
+	<link rel="stylesheet" href="/css/pagedjs-interface.css" media="screen"/>
+
+	<!-- JS -->
+	<script src="/js/configs.js"></script>
+
+	<!-- MODULES -->
+	<script id="MathJax-script" src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-svg.js"></script>
+	<script src="/js/paged/paged.polyfill.min.js" defer></script>
+
+	<script src="/js/commands.mjs" type="module" defer></script>
+</head>
+<body>
+	<section class="cover">
+		<div class="top">
+			<div class="writing-type"><%= writingType %></div>
+			<div class="title"><%- title %></div>
+		</div>
+
+		<div class="organization-logo">
+			<img src="<%- organization.logo %>"/>
+		</div>
+
+		<div class="middle">
+			<div class="author"><%= author.name %></div>
+			<div class="author-id"><%= author.id %></div>
+		</div>
+
+		<div class="bottom">
+			<div class="organization"><%= organization.name %></div>
+			<div class="suborganization"><%= organization.sub %></div>
+			<div class="year"><%= year %></div>
+		</div>
+	</section>
+
+	<%- content %>
+</body>
+<script type="module">
+	import ElementBuilder from '/js/element-builder.mjs';
+	import { resolveCommands } from '/js/commands.mjs';
+
+	window.addEventListener('load', async () => {
+		await document.fonts.ready;
+		await MathJax.startup.promise;
+		await MathJax.typesetPromise();
+		await PagedPolyfill.preview();
+	});
+
+	//* CONSTANTS
+	const constants = {
+		TITLE: '<%- title %>',
+		AUTHOR_NAME: '<%- author.name %>'
+	}
+
+	resolveCommands(constants);
+</script>
+</html>
