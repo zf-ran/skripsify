@@ -1,3 +1,7 @@
+# 1.0.2-b1
+
+- Added host and port configuration.
+
 # 1.0.1-b4
 
 - Changed to scoped package.

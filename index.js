@@ -40,8 +40,12 @@ app.get('/paper/:page', async (req, res) => {
 	});
 });
 
-const PORT = 8080;
+const DEFAULT_PORT = 8080;
+const DEFAULT_HOST = '127.0.0.1';
 
-app.listen(PORT, '127.0.0.1', async () => {
-	console.log('Server is ready! With port', PORT);
+const PORT = process.env.SKRIPSIFY_PORT || process.env.PORT || DEFAULT_PORT;
+const HOST = process.env.SKRIPSIFY_HOST || process.env.HOST || DEFAULT_HOST;
+
+app.listen(PORT, HOST, async () => {
+	console.log('Server is ready! Listening on', HOST + ':' + PORT);
 });
