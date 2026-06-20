@@ -1,10 +1,10 @@
 {
-  "name": "formal-markdown",
-  "version": "1.0.1-b1",
+  "name": "skripsify",
+  "version": "1.0.1-b2",
   "description": "",
   "main": "index.js",
   "bin": {
-    "formal-markdown": "index.js"
+    "skripsify": "index.js"
   },
   "files": [
     "index.js",
