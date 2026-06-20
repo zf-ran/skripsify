@@ -1,6 +1,6 @@
 {
-  "name": "skripsify",
-  "version": "1.0.1-b3",
+  "name": "@zxp/skripsify",
+  "version": "1.0.1-b4",
   "description": "",
   "main": "index.js",
   "bin": {

@@ -1,3 +1,7 @@
+# 1.0.1-b4
+
+- Changed to scoped package.
+
 # 1.0.1-b3
 
 - Changed `formal-markdown` to `skripsify` in README.
