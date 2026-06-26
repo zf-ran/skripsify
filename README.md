@@ -12,20 +12,20 @@ npm install @zxp/skripsify -g --registry http://100.117.40.23:4873
 - Add `/assets` folder (optional).
 - Add a markdown file.
 - Run by `skripsify` if installed globally. Run by `npx @zxp/skripsify` if installed locally.
-- Open `localhost:8080/paper/<your_md_file>` to see the document.
+- Open `localhost:4129/paper/<your_md_file>` to see the document.
 
 **Configuring port and host**
 
 Set `SKRIPSIFY_PORT` or `PORT` to change the port, and `SKRIPSIFY_HOST` or `HOST` to change the bind address. Example:
 
 ```sh
-SKRIPSIFY_PORT=3000 SKRIPSIFY_HOST=0.0.0.0 skripsify
+SKRIPSIFY_PORT=4129 SKRIPSIFY_HOST=0.0.0.0 skripsify
 ```
 
 or when running directly
 
 ```sh
-PORT=3000 node .
+PORT=4129 HOST=0.0.0.0 node .
 ```
 
-Defaults are port `8080` and host `127.0.0.1`. Use `0.0.0.0` to bind publicly.
+Defaults are port `4129` and host `127.0.0.1`. Use `0.0.0.0` to bind publicly.

@@ -40,7 +40,7 @@ app.get('/paper/:page', async (req, res) => {
 	});
 });
 
-const DEFAULT_PORT = 8080;
+const DEFAULT_PORT = 4129;
 const DEFAULT_HOST = '127.0.0.1';
 
 const PORT = process.env.SKRIPSIFY_PORT || process.env.PORT || DEFAULT_PORT;

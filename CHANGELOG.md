@@ -1,3 +1,7 @@
+# 1.0.3
+
+- Changed default port from `8080` to `4129`.
+
 # 1.0.2-b1
 
 - Added host and port configuration.
