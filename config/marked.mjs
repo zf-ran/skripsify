@@ -99,7 +99,7 @@ export const blockCommands = {
 	level: 'block',
 
 	start(src) {
-		return src.indexOf('{');
+		return src.indexOf('{{');
 	},
 	tokenizer(src) {
 		/** Matches `{{commandName}}` or `{{commandName: argNum1=10; argStr2="hello"}}` */
@@ -133,7 +133,7 @@ export const inlineCommands = {
 	level: 'inline',
 
 	start(src) {
-		return src.indexOf('[');
+		return src.indexOf('[[');
 	},
 	tokenizer(src) {
 		/** Matches `[[commandName]]` or `[[commandName: argNum1=10; argStr2="hello"]]` */
@@ -159,6 +159,39 @@ export const inlineCommands = {
 			+ ` data-command-arguments="${token.arguments.replace(/"/g, '&quot;')}"`
 			+ `></span>`
 		);
+	}
+};
+
+export const math = {
+	name: 'math',
+	level: 'inline',
+	start(src) {
+		return src.indexOf('$');
+	},
+	tokenizer(src, tokens) {
+		// Match block math: $$math$$
+		const blockRule = /^\$\$\n?([\s\S]+?)\n?\$\$/;
+		const blockMatch = blockRule.exec(src);
+
+		if (blockMatch) {
+			return {
+				type: 'text',
+				raw: blockMatch[0],
+				text: blockMatch[0]
+			};
+		}
+
+		// Match inline math: $math$
+		const inlineRule = /^\$([^\$\n]+?)\$/;
+		const inlineMatch = inlineRule.exec(src);
+
+		if (inlineMatch) {
+			return {
+				type: 'text',
+				raw: inlineMatch[0],
+				text: inlineMatch[0]
+			};
+		}
 	}
 };
 

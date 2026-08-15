@@ -1,3 +1,12 @@
+# 1.1.0
+
+- Added configuration files.
+- Added customizable content and asset directory.
+- Added file in folder support: `/app/Folder/To/Markdown.md`.
+- Added logger.
+- - Added occupied port checking.
+- Changed view layout to one page per row, instead of two pages per row.
+
 # 1.0.3
 
 - Changed default port from `8080` to `4129`.

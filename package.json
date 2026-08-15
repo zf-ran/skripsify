@@ -1,13 +1,16 @@
 {
-  "name": "@zxp/skripsify",
-  "version": "1.0.3",
-  "description": "",
+  "name": "skripsify",
+  "version": "1.1.0",
+  "description": "Formal paper (skripsi, makalah, proposal) styled markdown.",
   "main": "index.js",
   "bin": {
     "skripsify": "index.js"
   },
   "files": [
     "index.js",
+    "logger.js",
+    "config.js",
+    "default-config.yaml",
     "config/",
     "public/",
     "views/"
@@ -15,13 +18,28 @@
   "scripts": {
     "start": "node ."
   },
+  "keywords": [
+    "markdown",
+    "marked",
+    "mermaid",
+    "skripsi"
+  ],
   "author": "Zafran",
-  "license": "ISC",
+  "license": "GPL-3.0-only",
   "dependencies": {
     "ejs": "^5.0.1",
+    "env-paths": "^2.2.1",
     "express": "^5.2.1",
     "gray-matter": "^4.0.3",
     "marked": "^17.0.4",
-    "path": "^0.12.7"
+    "path": "^0.12.7",
+    "pino": "^10.3.1",
+    "pino-pretty": "^13.1.3",
+    "untildify": "^6.0.0",
+    "yaml": "^2.9.0"
+  },
+  "repository": "github:zf-ran/skripsify",
+  "bugs": {
+    "url": "https://github.com/zf-ran/skripsify/issues"
   }
 }

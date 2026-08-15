@@ -1,0 +1,5 @@
+host: 127.0.0.1
+port: 4129
+contentDirectory: "~/Documents/Skripsify/Contents"
+assetDirectory: "~/Documents/Skripsify/Assets"
+logLevel: "info"
